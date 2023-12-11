@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="BootStrap/Icons/bootstrap-icons.min.css">
+</head>
+<body onclick="exitbody()" class="w-full h-screen bg-[url('Image/background.webp')] bg-cover flex justify-center items-center">
+    <div class="absolute flex justify-center items-center">
+        <div id="box1" class=" z-30 w-[500px] h-[300px] bg-[#ffffff90] rounded-xl flex-wrap flex justify-center content-center space-y-6">
+            <p class="w-full text-[#0f2a42] text-6xl font-sans text-center font-bold">Modal Project</p>
+            <button onclick="button()" class="w-fit px-3 py-1 text-white border-2 border-[#0f2a42] bg-[#0f2a42] rounded-lg font-sans hover:text-[#0f2a42] hover:bg-transparent hover:font-medium duration-300">OPEN MODAL</button>
+        </div>
+        <div id="box2" class="bg-[#ffffff90] hidden absolute w-[500px] h-[200px] rounded-xl flex-wrap justify-center">
+            <div class="w-full h-fit pt-4 flex justify-end pr-5 text-red-700"><button onclick="exit()" class="bi bi-x-lg font-black text-xl hover:scale-150 duration-200 hover:text-red-400"></button></div>
+            <p class="mb-10 w-full text-[#0f2a42] text-6xl font-sans text-center font-bold h-fit">Modal Content</p>
+        </div>
+    </div>
+    <script src="master.js"></script>
+</body>
+</html>
